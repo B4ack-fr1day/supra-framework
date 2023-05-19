@@ -1,0 +1,22 @@
+main supra : 
+    font {text}
+    cls / clear [for clear terminal]
+    cd telegram [go to telegram directory] : 
+        send post {url} 
+        cd .. [go back directory]
+        cls / clear [for clear terminal]
+
+    cd network [go to network directory] : 
+        get site -ip {domain name}
+        get site -html {https://example.url}
+        get site -s {https://example.url}
+        cd .. [go back directory]
+        cls / clear [for clear terminal]
+
+    global order:
+        t / time [show time]
+        d / date [show date]
+        font {text}
+        
+
+
