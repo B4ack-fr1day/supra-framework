@@ -1,22 +1,47 @@
 main supra : 
     font {text}
     cls / clear [for clear terminal]
-    cd telegram [go to telegram directory] : 
-        send post {url} 
+    cd telegram / cd tel [go to telegram directory] : 
+        set token {token}
+        set chat id {chat id}
+        set msg {message}
+        show-lists
+        clear-all-lists
+        clear-token
+        clear-chat-id
+        clear-msg
+        start-bot
         cd .. [go back directory]
         cls / clear [for clear terminal]
 
-    cd network [go to network directory] : 
+    cd network / cd net [go to network directory] : 
         get site -ip {domain name}
         get site -html {https://example.url}
         get site -s {https://example.url}
+        get site full scan {https://example.url}
+        scan port {port}
+        cd .. [go back directory]
+        cls / clear [for clear terminal]
+
+    cd encrypt / cd enc [go to encrypt directory] :
+        -b85 {text}
+        -b64 {text}
+        -b32 {text}
+        -b16 {text}
+        cd .. [go back directory]
+        cls / clear [for clear terminal]
+
+    cd decrypt / cd enc [go to decrypt directory] :
+        -b85 {text}
+        -b64 {text}
+        -b32 {text}
+        -b16 {text}
         cd .. [go back directory]
         cls / clear [for clear terminal]
 
     global order:
         t / time [show time]
         d / date [show date]
+        cls / clear [for clear terminal]
         font {text}
         
-
-
